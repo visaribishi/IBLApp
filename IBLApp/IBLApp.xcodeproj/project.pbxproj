@@ -98,11 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				4D1F75C5221B238700CBF665 /* AppDelegate.swift */,
-				4D1F75C7221B238700CBF665 /* ViewController.swift */,
-				4D1F75C9221B238700CBF665 /* Main.storyboard */,
 				4D1F75CC221B238800CBF665 /* Assets.xcassets */,
 				4D1F75CE221B238800CBF665 /* LaunchScreen.storyboard */,
 				4D1F75D1221B238800CBF665 /* Info.plist */,
+				4D1F75F7221B247200CBF665 /* Extensions */,
+				4D1F75F6221B246B00CBF665 /* Model */,
+				4D1F75F5221B246400CBF665 /* Storyboards */,
+				4D1F75F4221B245700CBF665 /* ViewControllers */,
 			);
 			path = IBLApp;
 			sourceTree = "<group>";
@@ -123,6 +125,36 @@
 				4D1F75E7221B238800CBF665 /* Info.plist */,
 			);
 			path = IBLAppUITests;
+			sourceTree = "<group>";
+		};
+		4D1F75F4221B245700CBF665 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F75C7221B238700CBF665 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D1F75F5221B246400CBF665 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F75C9221B238700CBF665 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4D1F75F6221B246B00CBF665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D1F75F7221B247200CBF665 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
