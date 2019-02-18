@@ -22,6 +22,10 @@
 		4D1F7606221B2A3B00CBF665 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F7605221B2A3B00CBF665 /* List.storyboard */; };
 		4D1F7609221B2ABC00CBF665 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7608221B2ABC00CBF665 /* ListViewController.swift */; };
 		4D1F760C221B2B2D00CBF665 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F760B221B2B2D00CBF665 /* ListTableViewCell.swift */; };
+		4D1F760E221B317200CBF665 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F760D221B317200CBF665 /* Details.storyboard */; };
+		4D1F7611221B323800CBF665 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7610221B323800CBF665 /* DetailsViewController.swift */; };
+		4D1F7613221B326000CBF665 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7612221B326000CBF665 /* DetailsTableViewController.swift */; };
+		4D1F7615221B32E100CBF665 /* WorkHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7614221B32E100CBF665 /* WorkHoursViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		4D1F7605221B2A3B00CBF665 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		4D1F7608221B2ABC00CBF665 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4D1F760B221B2B2D00CBF665 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		4D1F760D221B317200CBF665 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		4D1F7610221B323800CBF665 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4D1F7612221B326000CBF665 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		4D1F7614221B32E100CBF665 /* WorkHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHoursViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1F75FF221B28DE00CBF665 /* Map.storyboard */,
+				4D1F760D221B317200CBF665 /* Details.storyboard */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 		4D1F7601221B290000CBF665 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4D1F760F221B322700CBF665 /* Details */,
 				4D1F7602221B291200CBF665 /* MapViewController.swift */,
 			);
 			path = Map;
@@ -219,6 +229,16 @@
 				4D1F760B221B2B2D00CBF665 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4D1F760F221B322700CBF665 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F7610221B323800CBF665 /* DetailsViewController.swift */,
+				4D1F7612221B326000CBF665 /* DetailsTableViewController.swift */,
+				4D1F7614221B32E100CBF665 /* WorkHoursViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1F75F3221B23A100CBF665 /* Main.storyboard in Resources */,
+				4D1F760E221B317200CBF665 /* Details.storyboard in Resources */,
 				4D1F75D0221B238800CBF665 /* LaunchScreen.storyboard in Resources */,
 				4D1F7606221B2A3B00CBF665 /* List.storyboard in Resources */,
 				4D1F75CD221B238800CBF665 /* Assets.xcassets in Resources */,
@@ -356,9 +377,12 @@
 			files = (
 				4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */,
 				4D1F760C221B2B2D00CBF665 /* ListTableViewCell.swift in Sources */,
+				4D1F7611221B323800CBF665 /* DetailsViewController.swift in Sources */,
 				4D1F7603221B291200CBF665 /* MapViewController.swift in Sources */,
 				4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */,
+				4D1F7615221B32E100CBF665 /* WorkHoursViewController.swift in Sources */,
 				4D1F75FB221B254700CBF665 /* UIGradientView.swift in Sources */,
+				4D1F7613221B326000CBF665 /* DetailsTableViewController.swift in Sources */,
 				4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */,
 				4D1F75FD221B256500CBF665 /* UIRoundButton.swift in Sources */,
 				4D1F7609221B2ABC00CBF665 /* ListViewController.swift in Sources */,
