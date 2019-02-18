@@ -17,6 +17,8 @@
 		4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75F8221B251B00CBF665 /* UIExtendedView.swift */; };
 		4D1F75FB221B254700CBF665 /* UIGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75FA221B254700CBF665 /* UIGradientView.swift */; };
 		4D1F75FD221B256500CBF665 /* UIRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75FC221B256500CBF665 /* UIRoundButton.swift */; };
+		4D1F7600221B28DE00CBF665 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F75FF221B28DE00CBF665 /* Map.storyboard */; };
+		4D1F7603221B291200CBF665 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F7602221B291200CBF665 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		4D1F75F8221B251B00CBF665 /* UIExtendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtendedView.swift; sourceTree = "<group>"; };
 		4D1F75FA221B254700CBF665 /* UIGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientView.swift; sourceTree = "<group>"; };
 		4D1F75FC221B256500CBF665 /* UIRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundButton.swift; sourceTree = "<group>"; };
+		4D1F75FF221B28DE00CBF665 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		4D1F7602221B291200CBF665 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		4D1F75F4221B245700CBF665 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D1F7601221B290000CBF665 /* Map */,
 				4D1F75C7221B238700CBF665 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -144,6 +149,7 @@
 		4D1F75F5221B246400CBF665 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4D1F75FE221B28D000CBF665 /* Map */,
 				4D1F75C9221B238700CBF665 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -164,6 +170,22 @@
 				4D1F75FC221B256500CBF665 /* UIRoundButton.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D1F75FE221B28D000CBF665 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F75FF221B28DE00CBF665 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4D1F7601221B290000CBF665 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F7602221B291200CBF665 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +295,7 @@
 				4D1F75F3221B23A100CBF665 /* Main.storyboard in Resources */,
 				4D1F75D0221B238800CBF665 /* LaunchScreen.storyboard in Resources */,
 				4D1F75CD221B238800CBF665 /* Assets.xcassets in Resources */,
+				4D1F7600221B28DE00CBF665 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */,
+				4D1F7603221B291200CBF665 /* MapViewController.swift in Sources */,
 				4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */,
 				4D1F75FB221B254700CBF665 /* UIGradientView.swift in Sources */,
 				4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */,
