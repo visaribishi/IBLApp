@@ -9,21 +9,56 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private lazy var mapViewController: MapViewController = {
+        // Instantiate View Controller
+        guard let viewController = UIStoryboard(name: "Map", bundle: nil).instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else {
+            fatalError("MapViewController is missing")
+        }
+        return viewController
+    }()
+    
+    private lazy var listViewController: ListViewController = {
+        // Instantiate View Controller
+        guard let viewController = UIStoryboard(name: "List", bundle: nil).instantiateViewController(withIdentifier: "ListViewController") as? ListViewController else {
+            fatalError("ListViewController is missing")
+        }
+        return viewController
+    }()
 
     @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        add(asChildViewController: mapViewController)
     }
     
     @IBAction func myLocationButtonPressed(_ sender: Any) {
+        switchToMap()
     }
     
     @IBAction func locationButtonPressed(_ sender: Any) {
+        switchToMap()
     }
     
     @IBAction func listButtonPressed(_ sender: Any) {
+        switchToList()
+    }
+    
+    func switchToMap() {
+        guard children.first as? MapViewController != nil else {
+            remove(asChildViewController: listViewController)
+            add(asChildViewController: mapViewController)
+            return
+        }
+    }
+    
+    func switchToList() {
+        guard children.first as? ListViewController != nil else {
+            remove(asChildViewController: mapViewController)
+            add(asChildViewController: listViewController)
+            return
+        }
     }
     
     private func add(asChildViewController viewController: UIViewController) {
