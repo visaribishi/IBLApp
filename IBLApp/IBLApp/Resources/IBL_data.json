@@ -1,0 +1,198 @@
+{
+	"data": [{
+			"id": 1,
+			"name": "Poslovnica 2 u Tuzli",
+			"address": "Armije BiH 3, Tuzla 75000",
+			"phone": "+387 35 555 555",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "branch",
+			"location": {
+				"lat": 44.552722,
+				"long": 18.693240
+			},
+			"working_hours": [{
+					"day": 0,
+					"start_hours": 9,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 1,
+					"start_hours": 9,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 2,
+					"start_hours": 9,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 3,
+					"start_hours": 9,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 4,
+					"start_hours": 9,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "UKC Tuzla, Trnovac bb",
+			"address": "UKC Tuzla, Trnovac bb, Tuzla 75000",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "atm",
+			"location": {
+				"lat": 44.537132,
+				"long": 18.692712
+			}
+		},
+		{
+			"id": 3,
+			"name": "TR Knjizara Finesa Poslovnica",
+			"address": "Ulica Oslobodjenja bb, Zivinice 75270",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "atm",
+			"location": {
+				"lat": 44.450228,
+				"long": 18.650903
+			}
+		},
+		{
+			"id": 4,
+			"name": "Poslovnica 12 u Sarajevu",
+			"address": "Zelenih beretki 24, Sarajevo 71000",
+			"phone": "+387 35 555 555",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "branch",
+			"location": {
+				"lat": 43.858422,
+				"long": 18.427726
+			},
+			"working_hours": [{
+					"day": 0,
+					"start_hours": 8,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 30
+				},
+				{
+					"day": 1,
+					"start_hours": 8,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 30
+				},
+				{
+					"day": 2,
+					"start_hours": 8,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 30
+				},
+				{
+					"day": 3,
+					"start_hours": 8,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 30
+				},
+				{
+					"day": 4,
+					"start_hours": 8,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 30
+				},
+				{
+					"day": 5,
+					"start_hours": 12,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 0
+				},
+				{
+					"day": 6,
+					"start_hours": 12,
+					"start_minutes": 0,
+					"end_hours": 17,
+					"end_minutes": 0
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Sipad",
+			"address": "Marsala Tita 48, Sarajevo 71000",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "atm",
+			"location": {
+				"lat": 43.858973,
+				"long": 18.419791
+			}
+		},
+		{
+			"id": 6,
+			"name": "Tus Lukavica",
+			"address": "Vojvode Radomira putnika bb, Lukavica 75300",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "atm",
+			"location": {
+				"lat": 43.825283,
+				"long": 18.363171
+			}
+		},
+		{
+			"id": 7,
+			"name": "Poslovnica u Banja Luci",
+			"address": "1. Krajisnog korpusa 39, Banja Luka 78000",
+			"phone": "+387 35 555 555",
+			"email": "demoapp@abc-softwaredev.com",
+			"website": "https://www.abc-softwaredev.com/",
+			"type": "branch",
+			"location": {
+				"lat": 44.777095,
+				"long": 18.191402
+			},
+			"working_hours": [{
+					"day": 0,
+					"start_hours": 8,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 1,
+					"start_hours": 8,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				},
+				{
+					"day": 2,
+					"start_hours": 8,
+					"start_minutes": 30,
+					"end_hours": 16,
+					"end_minutes": 30
+				}
+			]
+		}
+	]
+}
