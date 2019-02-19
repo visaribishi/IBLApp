@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func locationButtonPressed(_ sender: Any) {
         switchToMap()
+        mapViewController.focusOnAnnotations()
     }
     
     @IBAction func listButtonPressed(_ sender: Any) {
