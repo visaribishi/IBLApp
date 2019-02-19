@@ -23,6 +23,9 @@
                                 <rect key="frame" x="20" y="25" width="335" height="56"/>
                                 <color key="barTintColor" red="0.015686274510000001" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2cy-4G-dTI" id="yj7-8v-05X"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yS6-Vv-Jig">
                                 <rect key="frame" x="20" y="86" width="335" height="581"/>
