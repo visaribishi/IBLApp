@@ -104,7 +104,12 @@ extension ListViewController: UITableViewDataSource {
         let bank = self.state.items[indexPath.row]
         cell.nameLabel.text = bank.name
         cell.addressLabel.text = bank.address
-        cell.typeImageView.image = (bank.type == "branch") ? UIImage(named: "ic_branch") : UIImage(named: "ic_atm")
+        switch bank.type {
+        case .branch:
+            cell.typeImageView.image = UIImage(named: "ic_branch")
+        case .atm:
+            cell.typeImageView.image = UIImage(named: "ic_atm")
+        }
         return cell
     }
 }

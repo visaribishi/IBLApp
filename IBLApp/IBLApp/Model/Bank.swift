@@ -8,13 +8,18 @@
 
 import Foundation
 
+enum Type: String, Codable {
+    case branch
+    case atm
+}
+
 struct Bank: Codable {
     let id: Int
     let name, address: String
     let phone: String?
     let email: String
     let website: String
-    let type: String
+    let type: Type
     let location: Location
     let workingHours: [WorkingHour]?
     
