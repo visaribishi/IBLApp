@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PVj-kI-Efw" customClass="CustomCalloutView" customModule="IBLApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9E-cH-qdS" customClass="UIExtendedView" customModule="IBLApp" customModuleProvider="target">
+                    <rect key="frame" x="2" y="2" width="296" height="66"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIV-Eo-oXq" customClass="UIExtendedView" customModule="IBLApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="296" height="33"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poslovnica u Tuzli" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1e-oh-0rV">
+                                    <rect key="frame" x="10" y="8" width="276" height="17"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.015686274510000001" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="p1e-oh-0rV" firstAttribute="top" secondItem="hIV-Eo-oXq" secondAttribute="top" constant="8" id="7EJ-0m-Xee"/>
+                                <constraint firstAttribute="trailing" secondItem="p1e-oh-0rV" secondAttribute="trailing" constant="10" id="R8Z-yX-nN4"/>
+                                <constraint firstItem="p1e-oh-0rV" firstAttribute="leading" secondItem="hIV-Eo-oXq" secondAttribute="leading" constant="10" id="kBC-JC-idR"/>
+                                <constraint firstAttribute="bottom" secondItem="p1e-oh-0rV" secondAttribute="bottom" constant="8" id="p3J-ou-7ec"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.015686274510000001" green="0.59371275270000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solni trg, 5, Tuzla 75000" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-SL-QrX">
+                            <rect key="frame" x="10" y="41" width="276" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0039215686269999999" green="0.61960784310000006" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hIV-Eo-oXq" firstAttribute="top" secondItem="n9E-cH-qdS" secondAttribute="top" id="1dy-NT-htu"/>
+                        <constraint firstItem="hIV-Eo-oXq" firstAttribute="leading" secondItem="n9E-cH-qdS" secondAttribute="leading" id="LCB-1S-k61"/>
+                        <constraint firstItem="9qW-SL-QrX" firstAttribute="top" secondItem="hIV-Eo-oXq" secondAttribute="bottom" constant="8" id="LFb-ge-2rX"/>
+                        <constraint firstAttribute="bottom" secondItem="9qW-SL-QrX" secondAttribute="bottom" constant="8" id="cYv-k3-7Oy"/>
+                        <constraint firstItem="9qW-SL-QrX" firstAttribute="leading" secondItem="n9E-cH-qdS" secondAttribute="leading" constant="10" id="mLF-bb-kLA"/>
+                        <constraint firstItem="bu5-ja-sNP" firstAttribute="trailing" secondItem="9qW-SL-QrX" secondAttribute="trailing" constant="10" id="pRz-ag-jTp"/>
+                        <constraint firstAttribute="trailing" secondItem="hIV-Eo-oXq" secondAttribute="trailing" id="vjx-yF-EJQ"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="bu5-ja-sNP"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="n9E-cH-qdS" firstAttribute="top" secondItem="PR6-HS-zFo" secondAttribute="top" constant="2" id="Cuz-FK-FQG"/>
+                <constraint firstItem="n9E-cH-qdS" firstAttribute="bottom" secondItem="PR6-HS-zFo" secondAttribute="bottom" constant="2" id="G81-vq-DBD"/>
+                <constraint firstItem="PR6-HS-zFo" firstAttribute="trailing" secondItem="n9E-cH-qdS" secondAttribute="trailing" constant="2" id="b0w-L7-TAO"/>
+                <constraint firstItem="n9E-cH-qdS" firstAttribute="leading" secondItem="PR6-HS-zFo" secondAttribute="leading" constant="2" id="cUf-JY-vkk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="PR6-HS-zFo"/>
+            <connections>
+                <outlet property="addressLabel" destination="9qW-SL-QrX" id="7sl-Z5-k57"/>
+                <outlet property="nameLabel" destination="p1e-oh-0rV" id="onJ-Ec-hJ8"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="31.484257871064472"/>
+        </view>
+    </objects>
+</document>
