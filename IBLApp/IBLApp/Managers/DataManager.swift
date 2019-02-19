@@ -24,7 +24,8 @@ public final class DataManager {
             } catch {
                 completion(Result.failure(error))
             }
+        } else {
+            completion(Result.success([]))
         }
-        completion(Result.success([]))
     }
 }
