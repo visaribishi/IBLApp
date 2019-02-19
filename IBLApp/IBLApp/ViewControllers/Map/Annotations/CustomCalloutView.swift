@@ -13,6 +13,8 @@ class CustomCalloutView: UIView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
+    var details: Bank!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
