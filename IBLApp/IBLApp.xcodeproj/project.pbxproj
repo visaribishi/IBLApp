@@ -16,6 +16,8 @@
 		4D1C2549221C2C5500CC1BF1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2548221C2C5500CC1BF1 /* DataManager.swift */; };
 		4D1C254C221C7F5500CC1BF1 /* CustomCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D1C254B221C7F5500CC1BF1 /* CustomCalloutView.xib */; };
 		4D1C254E221C7F6600CC1BF1 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */; };
+		4D1C2550221C834700CC1BF1 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */; };
+		4D1C2552221C83A300CC1BF1 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */; };
 		4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C5221B238700CBF665 /* AppDelegate.swift */; };
 		4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C7221B238700CBF665 /* ViewController.swift */; };
 		4D1F75CD221B238800CBF665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F75CC221B238800CBF665 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		4D1C2548221C2C5500CC1BF1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		4D1C254B221C7F5500CC1BF1 /* CustomCalloutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCalloutView.xib; sourceTree = "<group>"; };
 		4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
+		4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		4D1F75C2221B238700CBF665 /* IBLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1F75C5221B238700CBF665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1F75C7221B238700CBF665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			children = (
 				4D1C254B221C7F5500CC1BF1 /* CustomCalloutView.xib */,
 				4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */,
+				4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */,
+				4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */,
 			);
 			path = Annotations;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 				4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */,
 				4D1C253A221C2A6600CC1BF1 /* ResponseObject.swift in Sources */,
 				4D1F760C221B2B2D00CBF665 /* ListTableViewCell.swift in Sources */,
+				4D1C2550221C834700CC1BF1 /* CustomAnnotation.swift in Sources */,
 				4D1F7611221B323800CBF665 /* DetailsViewController.swift in Sources */,
 				4D1F7603221B291200CBF665 /* MapViewController.swift in Sources */,
 				4D1C2540221C2A8E00CC1BF1 /* WorkingHour.swift in Sources */,
@@ -452,6 +459,7 @@
 				4D1F7613221B326000CBF665 /* DetailsTableViewController.swift in Sources */,
 				4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */,
 				4D1F75FD221B256500CBF665 /* UIRoundButton.swift in Sources */,
+				4D1C2552221C83A300CC1BF1 /* AnnotationView.swift in Sources */,
 				4D1C253C221C2A7700CC1BF1 /* Bank.swift in Sources */,
 				4D1F7609221B2ABC00CBF665 /* ListViewController.swift in Sources */,
 			);
