@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1C253A221C2A6600CC1BF1 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2539221C2A6600CC1BF1 /* ResponseObject.swift */; };
+		4D1C253C221C2A7700CC1BF1 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C253B221C2A7700CC1BF1 /* Bank.swift */; };
+		4D1C253E221C2A8200CC1BF1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C253D221C2A8200CC1BF1 /* Location.swift */; };
+		4D1C2540221C2A8E00CC1BF1 /* WorkingHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C253F221C2A8E00CC1BF1 /* WorkingHour.swift */; };
 		4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C5221B238700CBF665 /* AppDelegate.swift */; };
 		4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C7221B238700CBF665 /* ViewController.swift */; };
 		4D1F75CD221B238800CBF665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F75CC221B238800CBF665 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D1C2539221C2A6600CC1BF1 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		4D1C253B221C2A7700CC1BF1 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		4D1C253D221C2A8200CC1BF1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4D1C253F221C2A8E00CC1BF1 /* WorkingHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHour.swift; sourceTree = "<group>"; };
 		4D1F75C2221B238700CBF665 /* IBLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1F75C5221B238700CBF665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1F75C7221B238700CBF665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +182,10 @@
 		4D1F75F6221B246B00CBF665 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4D1C2539221C2A6600CC1BF1 /* ResponseObject.swift */,
+				4D1C253B221C2A7700CC1BF1 /* Bank.swift */,
+				4D1C253D221C2A8200CC1BF1 /* Location.swift */,
+				4D1C253F221C2A8E00CC1BF1 /* WorkingHour.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,15 +388,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */,
+				4D1C253A221C2A6600CC1BF1 /* ResponseObject.swift in Sources */,
 				4D1F760C221B2B2D00CBF665 /* ListTableViewCell.swift in Sources */,
 				4D1F7611221B323800CBF665 /* DetailsViewController.swift in Sources */,
 				4D1F7603221B291200CBF665 /* MapViewController.swift in Sources */,
+				4D1C2540221C2A8E00CC1BF1 /* WorkingHour.swift in Sources */,
 				4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */,
+				4D1C253E221C2A8200CC1BF1 /* Location.swift in Sources */,
 				4D1F7615221B32E100CBF665 /* WorkHoursViewController.swift in Sources */,
 				4D1F75FB221B254700CBF665 /* UIGradientView.swift in Sources */,
 				4D1F7613221B326000CBF665 /* DetailsTableViewController.swift in Sources */,
 				4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */,
 				4D1F75FD221B256500CBF665 /* UIRoundButton.swift in Sources */,
+				4D1C253C221C2A7700CC1BF1 /* Bank.swift in Sources */,
 				4D1F7609221B2ABC00CBF665 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
