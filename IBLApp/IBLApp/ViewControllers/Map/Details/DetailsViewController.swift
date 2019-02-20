@@ -10,6 +10,8 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var bank: Bank!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Location"
