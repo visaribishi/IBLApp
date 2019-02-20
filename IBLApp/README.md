@@ -17,7 +17,7 @@ The app consists on a rootViewController that handles the UI changes from the Ma
     The map will display Annotations that use the CustomAnnotation object that has coorditates, image but also a details propertie with data on it that will change the image base on the object type. The details will also be used later when we click on the description view of the Annotation.
     If the user clicks on "My Location" button it will display the UserAnnotation together with the custom image on it
     The user needs to click a specified Annotation on the map and it will display a description view with name and address and after clicking it, the screen will be redirected to the Details.
- -Details
+- Details
         The details screen is build by a ViewController that has the name, address labels and a static UITableViewController that will display the other data. If the user clicks on the "Work Hours" row, a modal with be displayed with a list of opening hours.
 - List
     The list displays the data from the JSON file into a UITableView and the user will be able to filter the data with a search keyword and click the items so the selcted item will be focused on the map.
