@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     
     @IBAction func myLocationButtonPressed(_ sender: Any) {
         switchToMap()
+        mapViewController.focusCurrentLocation()
     }
     
     @IBAction func locationButtonPressed(_ sender: Any) {

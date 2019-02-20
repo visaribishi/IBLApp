@@ -19,16 +19,12 @@ class MapViewController: UIViewController {
     
     var calloutView: CustomCalloutView!
     var annotations: [MKAnnotation] = []
+    var currentLocationAnnotation: MKAnnotation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         getBankList()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        focusOnAnnotations()
     }
     
     func getBankList() {
@@ -49,6 +45,7 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(pin)
             annotations.append(pin)
         }
+        focusOnAnnotations()
     }
     
     func focusOnAnnotations() {
@@ -57,6 +54,22 @@ class MapViewController: UIViewController {
     }
     
 
+    func focusCurrentLocation() {
+        guard let currentLocation = LocationManager.shared.getCurrentLocation() else {
+            let alertViewController = UIAlertController(title: "Error getting user location!", message: "Please try again.", preferredStyle: .alert)
+            alertViewController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alertViewController, animated: true, completion: nil)
+            print("Error getting user location")
+            return
+        }
+        if let currentAnnotation = currentLocationAnnotation {
+            mapView.removeAnnotation(currentAnnotation)
+        }
+        let pin = UserAnnotation(coordinate: currentLocation.coordinate)
+        mapView.addAnnotation(pin)
+        currentLocationAnnotation = pin
+        self.mapView.setCenter(currentLocation.coordinate, animated: true)
+    }
     
     // MARK: - Navigation
 
@@ -87,6 +100,11 @@ extension MapViewController: MKMapViewDelegate {
         if let customAnnotation = annotation as? CustomAnnotation {
             annotationView?.image = customAnnotation.image
         }
+        
+        if let userAnnotation = annotation as? UserAnnotation {
+            annotationView?.image = userAnnotation.image
+        }
+        
         return annotationView
     }
     
@@ -97,17 +115,16 @@ extension MapViewController: MKMapViewDelegate {
         }
         let views = Bundle.main.loadNibNamed("CustomCalloutView", owner: nil, options: nil)
         calloutView = views?[0] as? CustomCalloutView
-        if let customAnnotation = view.annotation as? CustomAnnotation {
+        if let customAnnotation = view.annotation as? CustomAnnotation, let callout = calloutView {
             calloutView.delegate = self
             calloutView.details = customAnnotation.details
             calloutView.addressLabel.text = customAnnotation.details.address
             calloutView.nameLabel.text = customAnnotation.details.name
-        }
-        if let callout = calloutView {
+            
             callout.center = CGPoint(x: view.bounds.size.width / 2, y: -callout.bounds.size.height * 0.52)
             view.addSubview(calloutView!)
+            mapView.setCenter((view.annotation?.coordinate)!, animated: true)
         }
-        mapView.setCenter((view.annotation?.coordinate)!, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
