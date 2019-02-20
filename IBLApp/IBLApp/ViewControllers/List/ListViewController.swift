@@ -77,6 +77,13 @@ class ListViewController: UIViewController {
         }
     }
     
+    func focusSelectedBank(with location: Location) {
+        if let parent = parent as? ViewController {
+            parent.switchToMap()
+            parent.focus(location: location)
+        }
+    }
+    
     private func updateViewFromState() {
         switch state {
         case .loading:
@@ -111,6 +118,11 @@ extension ListViewController: UITableViewDataSource {
             cell.typeImageView.image = UIImage(named: "ic_atm")
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bank = self.state.items[indexPath.row]
+        self.focusSelectedBank(with: bank.location)
     }
 }
 

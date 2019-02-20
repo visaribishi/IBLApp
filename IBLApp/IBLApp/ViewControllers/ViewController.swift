@@ -47,6 +47,10 @@ class ViewController: UIViewController {
         switchToList()
     }
     
+    func focus(location: Location) {
+        switchToMap()
+        mapViewController.centerTo(location: location)
+    }
     func switchToMap() {
         guard children.first as? MapViewController != nil else {
             remove(asChildViewController: listViewController)
