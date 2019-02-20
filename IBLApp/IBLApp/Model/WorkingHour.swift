@@ -22,7 +22,7 @@ struct WorkingHour: Codable {
 
 extension WorkingHour {
     var dayName: String {
-        let weekDays = Calendar(identifier: .gregorian).weekdaySymbols
+        let weekDays = Calendar.current.weekdaySymbols
         let index = (day >= 0 && day < 6) ? day + 1 : 0
         return weekDays[index]
     }
