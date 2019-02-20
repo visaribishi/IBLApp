@@ -18,6 +18,8 @@
 		4D1C254E221C7F6600CC1BF1 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */; };
 		4D1C2550221C834700CC1BF1 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */; };
 		4D1C2552221C83A300CC1BF1 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */; };
+		4D1C2558221D8A5B00CC1BF1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2557221D8A5B00CC1BF1 /* LocationManager.swift */; };
+		4D1C255A221D8B6C00CC1BF1 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1C2559221D8B6C00CC1BF1 /* UserAnnotation.swift */; };
 		4D1F75C6221B238700CBF665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C5221B238700CBF665 /* AppDelegate.swift */; };
 		4D1F75C8221B238700CBF665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1F75C7221B238700CBF665 /* ViewController.swift */; };
 		4D1F75CD221B238800CBF665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F75CC221B238800CBF665 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
 		4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		4D1C2557221D8A5B00CC1BF1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4D1C2559221D8B6C00CC1BF1 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
 		4D1F75C2221B238700CBF665 /* IBLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1F75C5221B238700CBF665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1F75C7221B238700CBF665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4D1C2548221C2C5500CC1BF1 /* DataManager.swift */,
+				4D1C2557221D8A5B00CC1BF1 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				4D1C254D221C7F6600CC1BF1 /* CustomCalloutView.swift */,
 				4D1C254F221C834700CC1BF1 /* CustomAnnotation.swift */,
 				4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */,
+				4D1C2559221D8B6C00CC1BF1 /* UserAnnotation.swift */,
 			);
 			path = Annotations;
 			sourceTree = "<group>";
@@ -459,6 +465,8 @@
 				4D1F7613221B326000CBF665 /* DetailsTableViewController.swift in Sources */,
 				4D1F75F9221B251B00CBF665 /* UIExtendedView.swift in Sources */,
 				4D1F75FD221B256500CBF665 /* UIRoundButton.swift in Sources */,
+				4D1C255A221D8B6C00CC1BF1 /* UserAnnotation.swift in Sources */,
+				4D1C2558221D8A5B00CC1BF1 /* LocationManager.swift in Sources */,
 				4D1C2552221C83A300CC1BF1 /* AnnotationView.swift in Sources */,
 				4D1C253C221C2A7700CC1BF1 /* Bank.swift in Sources */,
 				4D1F7609221B2ABC00CBF665 /* ListViewController.swift in Sources */,
@@ -639,6 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQYD4D3V43;
 				INFOPLIST_FILE = IBLApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,6 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQYD4D3V43;
 				INFOPLIST_FILE = IBLApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
