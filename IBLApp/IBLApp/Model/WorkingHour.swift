@@ -9,8 +9,7 @@
 import Foundation
 
 struct WorkingHour: Codable {
-    let day, startHours, startMinutes, endHours: Int
-    let endMinutes: Int
+    let day, startHours, startMinutes, endHours, endMinutes: Int
     
     enum CodingKeys: String, CodingKey {
         case day
@@ -18,5 +17,16 @@ struct WorkingHour: Codable {
         case startMinutes = "start_minutes"
         case endHours = "end_hours"
         case endMinutes = "end_minutes"
+    }
+}
+
+extension WorkingHour {
+    var dayName: String {
+        let weekDays = Calendar.current.weekdaySymbols
+        return weekDays[day]
+    }
+    
+    var workHours: String {
+        return "\(startHours):\(startMinutes) - \(endHours):\(endMinutes)"
     }
 }
