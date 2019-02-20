@@ -60,7 +60,6 @@ class MapViewController: UIViewController {
             let alertViewController = UIAlertController(title: "Error getting user location!", message: "Please try again.", preferredStyle: .alert)
             alertViewController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alertViewController, animated: true, completion: nil)
-            print("Error getting user location")
             return
         }
         if let currentAnnotation = currentLocationAnnotation {
