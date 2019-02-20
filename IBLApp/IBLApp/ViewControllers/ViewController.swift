@@ -63,6 +63,7 @@ class ViewController: UIViewController {
         guard children.first as? ListViewController != nil else {
             remove(asChildViewController: mapViewController)
             add(asChildViewController: listViewController)
+            listViewController.delegate = self
             return
         }
     }
@@ -92,6 +93,12 @@ class ViewController: UIViewController {
         // Notify Child View Controller
         viewController.removeFromParent()
     }
+}
 
+extension ViewController: ListViewControllerDelegate {
+    func itemPressed(with location: Location) {
+        self.switchToMap()
+        self.focus(location: location)
+    }
 }
 

@@ -22,10 +22,15 @@ private enum State {
     }
 }
 
+protocol ListViewControllerDelegate: class {
+    func itemPressed(with location: Location)
+}
+
 class ListViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    weak var delegate: ListViewControllerDelegate?
     
     private var state = State.loading {
         didSet {
@@ -77,13 +82,6 @@ class ListViewController: UIViewController {
         }
     }
     
-    func focusSelectedBank(with location: Location) {
-        if let parent = parent as? ViewController {
-            parent.switchToMap()
-            parent.focus(location: location)
-        }
-    }
-    
     private func updateViewFromState() {
         switch state {
         case .loading:
@@ -122,7 +120,7 @@ extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let bank = self.state.items[indexPath.row]
-        self.focusSelectedBank(with: bank.location)
+        delegate?.itemPressed(with: bank.location)
     }
 }
 
