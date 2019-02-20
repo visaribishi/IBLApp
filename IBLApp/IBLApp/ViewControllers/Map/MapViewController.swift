@@ -53,7 +53,6 @@ class MapViewController: UIViewController {
         mapView.showAnnotations(self.annotations, animated: true)
     }
     
-
     func focusCurrentLocation() {
         guard let currentLocation = LocationManager.shared.getCurrentLocation() else {
             let alertViewController = UIAlertController(title: "Error getting user location!", message: "Please try again.", preferredStyle: .alert)
@@ -69,6 +68,16 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(pin)
         currentLocationAnnotation = pin
         self.mapView.setCenter(currentLocation.coordinate, animated: true)
+    }
+    
+    // Center bank/branch location from the ListViewController
+    func centerTo(location: Location) {
+        if let annotation = self.annotations.filter({$0.coordinate.latitude == location.lat && $0.coordinate.longitude == location.long}).first {
+            self.mapView.showAnnotations([annotation], animated: true)
+        } else {
+            let coordinate = CLLocationCoordinate2D(latitude: location.lat, longitude: location.long)
+            self.mapView.setCenter(coordinate, animated: true)
+        }
     }
     
     // MARK: - Navigation
