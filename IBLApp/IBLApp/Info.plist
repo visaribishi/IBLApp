@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>IBL App needs your permission to use your Location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>IBL App needs your permission to use your Location</string>
 </dict>
 </plist>
