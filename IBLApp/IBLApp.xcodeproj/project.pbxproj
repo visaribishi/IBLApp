@@ -72,6 +72,7 @@
 		4D1C2551221C83A300CC1BF1 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		4D1C2557221D8A5B00CC1BF1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4D1C2559221D8B6C00CC1BF1 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		4D1C255B221D9F0100CC1BF1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D1F75C2221B238700CBF665 /* IBLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1F75C5221B238700CBF665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D1F75C7221B238700CBF665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 		4D1F75B9221B238700CBF665 = {
 			isa = PBXGroup;
 			children = (
+				4D1C255B221D9F0100CC1BF1 /* README.md */,
 				4D1F75C4221B238700CBF665 /* IBLApp */,
 				4D1F75D9221B238800CBF665 /* IBLAppTests */,
 				4D1F75E4221B238800CBF665 /* IBLAppUITests */,
