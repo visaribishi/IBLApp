@@ -49,8 +49,10 @@ class MapViewController: UIViewController {
     }
     
     func focusOnAnnotations() {
-        mapView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        mapView.showAnnotations(self.annotations, animated: true)
+        DispatchQueue.main.async {
+            self.mapView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            self.mapView.showAnnotations(self.annotations, animated: true)
+        }
     }
     
     func focusCurrentLocation() {
